@@ -1,0 +1,160 @@
+:root {
+  --bg-main: #f1f1f4;
+  --accent-main: #4573fc;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  transition: all 140s ease-in;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: var(--bg-main);
+}
+button:hover {
+  cursor: pointer;
+  color: red;
+}
+
+header {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+}
+
+section {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  display: flex;
+  gap: 15px;
+}
+
+.page_wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* main */
+.input_container {
+  position: relative;
+  width: 100%;
+}
+
+.input_container .start_icon,
+.input_container .end_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.input_container .start_icon {
+  display: flex;
+  z-index: 10;
+  left: 10px;
+}
+
+.input_container .end_icon {
+  display: flex;
+  gap: 5px;
+  right: 10px;
+}
+
+.input_container input {
+  width: 100%;
+  padding: 10px 60px 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+/* ..... */
+
+/* footer */
+footer {
+  background: var(--bg-main);
+}
+.nav_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+}
+/* ..... */
+.button {
+  padding: 10px;
+  border-radius: 4px;
+  background: var(--accent-main);
+  color: #fff;
+}
+
+.padding_15 {
+  padding: 15px;
+}
+.flex_center {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.logo_0,
+.logo_3 {
+  color: #2c2cf1;
+}
+
+.logo_1,
+.logo_5 {
+  color: #f14d2c;
+}
+.logo_2 {
+  color: #edf903;
+}
+.logo_4 {
+  color: #05ed2c;
+}
+
+@media (max-width: 600px) {
+  section {
+    width: 90%;
+  }
+}
